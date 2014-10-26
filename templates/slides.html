@@ -1,0 +1,9 @@
+{% for slide in slides %}
+	<div class="aslide">
+		<ul>
+		{% for company in slide %}
+			<li>{{company}}</li>
+		{% endfor %}
+		</ul>
+	</div>
+{% endfor %}

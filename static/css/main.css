@@ -1,0 +1,61 @@
+body {
+	width: 1720px;
+	height:880px;
+	padding: 100px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+ #heading {
+ 	font-size: 6.5em;
+ 	font-weight: 500;
+ 	padding-bottom: 60px;
+ 	color: #EF4135;
+ 	margin-left: -5px;
+ }
+
+#companies {
+	width: 1720px;
+  position: relative;
+	
+}
+
+#companies ul {
+	height: 716px;
+  -moz-column-count: 3;
+  -moz-column-gap: 200px;
+  -webkit-column-count: 3;
+  -webkit-column-gap : 200px;
+  -webkit-column-fill:auto;
+  -moz-column-fill:auto;
+  column-fill:auto;
+  -webkit-column-width:373px;
+  -moz-column-width:373px;
+  column-width:373px;   
+	font-size: 1.5em;
+	line-height: 48px;     
+ }
+
+ #logo {
+ 	position: absolute;
+ 	bottom: 100px;
+ 	left: 1369px;
+ }
+
+.aslide {
+  position: absolute;
+  height: 716px;
+  left: 0 px;  
+  top: 0 px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+  -moz-transition: opacity 1s ease-in-out; 
+  -webkit-transition: opacity 1s ease-in-out;  
+}
+
+.visible {
+  opacity: 1;
+}

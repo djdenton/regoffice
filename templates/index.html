@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Registered Office</title>
+	<meta name="description" content="Registered Office for Lubbock Fine">
+	<meta name="author" content="Daniel Denton">
+	<link rel="stylesheet" href="static/css/reset.css">
+	<link rel="stylesheet" href="static/css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500' rel='stylesheet' type='text/css'>
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	<script src="static/js/companies.js"></script>
+	<script>
+		$(document).ready(
+			function() {
+				getCompanies();
+				setInterval(function() {
+					getCompanies();
+				},86400000); 
+		});
+	</script>
+</head>
+
+<body>
+	<div id="heading">Registered Office	</div>
+	<div id="companies"></div>
+	<img src="static/images/lubbockfine.jpg" width="354px" height="110px" id="logo">	
+</body>
+</html>
