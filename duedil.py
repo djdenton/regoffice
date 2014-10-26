@@ -79,7 +79,7 @@ def get_slides(companies):
     slide = []
     slides = []
     slide_line_count = 1
-    breakpoints = [15,29,39]
+    breakpoints = [15,29,38]
 
     try:
         for company in companies:
@@ -96,7 +96,7 @@ def get_slides(companies):
 
             # Starts a new slide every 41 lines.
 
-            if slide_line_count > 38:
+            if slide_line_count > 37:
                 slides.append(slide)
                 slide_line_count = 1
                 slide = []
